@@ -8,7 +8,11 @@ import uniqid from 'uniqid';
 const Main = () => {
     const [cards, setCards] = useState(cardArray);
     const [history, setHistory] = useState([]);
+    const [score, setScore] = useState(-1);
     
+    useEffect(() => {
+        setScore(score +1);
+    }, [history])
 
     // this is the Fisher-Yates Shuffle Algorithm.
     const shuffle = (arr) => {
@@ -38,7 +42,9 @@ const Main = () => {
         }
         
         console.log(history);
+        console.log(score);
     }
+
     const checkHistory = (id) => {
         if (history.indexOf(id) !== -1){
             return false;
@@ -48,9 +54,7 @@ const Main = () => {
     
     return (
         <div className='Main'>
-            <Score onClick={() => {
-                console.log("this is a test");
-            }}/>
+            <Score score={score}/>
             {cards.map(item => {
                 return <Card onClick={handleClick} image={item.src} id={item.id} key={uniqid()} label={item.label}/>
             })
