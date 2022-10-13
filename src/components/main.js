@@ -7,6 +7,7 @@ import uniqid from 'uniqid';
 
 const Main = () => {
     const [cards, setCards] = useState(cardArray);
+    const [history, setHistory] = useState([]);
     
 
     // this is the Fisher-Yates Shuffle Algorithm.
@@ -29,9 +30,8 @@ const Main = () => {
         e.preventDefault();
         const shuffledCards = shuffle([...cards]);
         setCards(shuffledCards);
-        console.log("shuffle");
+        console.log(e.target);
        
-        
     }
     
     
@@ -41,8 +41,9 @@ const Main = () => {
                 console.log("this is a test");
             }}/>
             {cards.map(item => {
-                return <Card onClick={handleClick} image={item.src} key={uniqid()} label={item.label}/>
-            })}
+                return <Card onClick={handleClick} image={item.src} id={item.id} key={uniqid()} label={item.label}/>
+            })
+            }
            
         </div>
     )

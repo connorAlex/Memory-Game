@@ -13,7 +13,7 @@ import ralph from './images/RalphWiggum.webp';
 const cardArray = [
     {
         src: homer,
-        label: 'Homer Simpson'
+        label: 'Homer Simpson',
     },
     {
         src: barney,
@@ -57,5 +57,9 @@ const cardArray = [
     }
 
 ]
+
+for (let i = 0; i < cardArray.length; i++) {
+    cardArray[i].id = i;
+}
 
 export {cardArray};
