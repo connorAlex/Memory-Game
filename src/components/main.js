@@ -28,12 +28,23 @@ const Main = () => {
     
     const handleClick = (e) => {
         e.preventDefault();
+        const id = e.currentTarget.id;
         const shuffledCards = shuffle([...cards]);
-        setCards(shuffledCards);
-        console.log(e.target);
-       
+        
+        
+        if (checkHistory(id)) {
+            setCards(shuffledCards);
+            setHistory(history.concat([id]));
+        }
+        
+        console.log(history);
     }
-    
+    const checkHistory = (id) => {
+        if (history.indexOf(id) !== -1){
+            return false;
+        }
+        return true;
+    } 
     
     return (
         <div className='Main'>
