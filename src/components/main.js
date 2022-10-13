@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <div className='Main'>
             {cards.map(item => {
-                return <Card image={item.src} key={uniqid} label={item.label}/>
+                return <Card image={item.src} key={uniqid()} label={item.label}/>
             })}
            
         </div>
