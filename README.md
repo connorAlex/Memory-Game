@@ -25,3 +25,6 @@ Current and High Scores will be tracked.
 
 
 ## Implementation
+Created a data repository that contained all of the card image src and label information.
+This array was then mapped over, creating a card for each object in the array.
+
