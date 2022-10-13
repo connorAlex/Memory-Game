@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const main = () => {
+const Main = () => {
+    const [cards, setCards] = useState([]);
 
   return (
-    <div className='main'>
+    <div className='Main'>
 
     </div>
   )
 }
 
-export default main;
+export default Main;
