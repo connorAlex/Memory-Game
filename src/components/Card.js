@@ -1,9 +1,9 @@
 import React, { useState, } from 'react'
 
 const Card = (props) => {
-  const {image, label} = props;
+  const {image, label, onClick} = props;
   return (
-    <div className='card'>
+    <div onClick={onClick}>
       <div>
         <img src={image} alt='' />
         <div>{label}</div>
