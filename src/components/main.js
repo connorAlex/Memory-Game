@@ -9,6 +9,7 @@ const Main = () => {
     const [cards, setCards] = useState(cardArray);
     const [history, setHistory] = useState([]);
     const [score, setScore] = useState(-1);
+    const [highscore, setHighscore] = useState(0);
     
     useEffect(() => {
         setScore(score +1);
@@ -39,6 +40,8 @@ const Main = () => {
         if (checkHistory(id)) {
             setCards(shuffledCards);
             setHistory(history.concat([id]));
+        } else {
+            if (highscore < score) setHighscore(highscore + score);
         }
         
         console.log(history);
@@ -54,7 +57,7 @@ const Main = () => {
     
     return (
         <div className='Main'>
-            <Score score={score}/>
+            <Score score={score} highscore={highscore}/>
             {cards.map(item => {
                 return <Card onClick={handleClick} image={item.src} id={item.id} key={uniqid()} label={item.label}/>
             })
