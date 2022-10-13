@@ -7,7 +7,7 @@ const Score = (props) => {
     return (
         <div className='Main'>
             <div>Score:{score}</div>
-            <div>HighScore:{score}</div>
+            <div>HighScore:{highscore}</div>
         </div>
     )
     }
