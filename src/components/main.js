@@ -62,12 +62,16 @@ const Main = () => {
     } ;
     
     return (
-        <div className='Main'>
+        <div className='main'>
             <Score score={score} highscore={highscore}/>
-            {cards.map(item => {
-                return <Card onClick={handleClick} image={item.src} id={item.id} key={uniqid()} label={item.label}/>
-            })
-            }
+            <div className='cardHolder'>
+                {cards.map(item => {
+                    return <Card onClick={handleClick} image={item.src} id={item.id} key={uniqid()} label={item.label}/>
+                })
+                }
+            </div>
+            
+            
            
         </div>
     )
