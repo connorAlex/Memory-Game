@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.fb3512d1.css",
+    "main.js": "/memory-game/static/js/main.9d1b1f76.js",
+    "static/js/787.69b12325.chunk.js": "/memory-game/static/js/787.69b12325.chunk.js",
+    "static/media/Martin_PrinceJr.webp": "/memory-game/static/media/Martin_PrinceJr.31e8bfd0ace444acb4c1.webp",
+    "static/media/Barney_Gumble.webp": "/memory-game/static/media/Barney_Gumble.a7e049b790c37916d586.webp",
+    "static/media/RalphWiggum.webp": "/memory-game/static/media/RalphWiggum.525f232a56789124f034.webp",
+    "static/media/PrincipalSeymourSkinner.webp": "/memory-game/static/media/PrincipalSeymourSkinner.d0ec3d0ca58431c46064.webp",
+    "static/media/Moe_Syzlak.webp": "/memory-game/static/media/Moe_Syzlak.a9d18514b96d799e52de.webp",
+    "static/media/Maggie_Simpson.webp": "/memory-game/static/media/Maggie_Simpson.987bcc3f54fa0db7d0a8.webp",
+    "static/media/Lisa_Simpson.webp": "/memory-game/static/media/Lisa_Simpson.616e4cb5f6a7e9933a0b.webp",
+    "static/media/Krusty_The_Clown.webp": "/memory-game/static/media/Krusty_The_Clown.c962dd0316c686c2a138.webp",
+    "static/media/homer.webp": "/memory-game/static/media/homer.c0169dee016c4bebdbbf.webp",
+    "static/media/Bart_Simpson.webp": "/memory-game/static/media/Bart_Simpson.f369da20bf9c05abc0a0.webp",
+    "static/media/Marge_Simpson.webp": "/memory-game/static/media/Marge_Simpson.4ca5b1cac808e0abbfe1.webp",
+    "index.html": "/memory-game/index.html",
+    "main.fb3512d1.css.map": "/memory-game/static/css/main.fb3512d1.css.map",
+    "main.9d1b1f76.js.map": "/memory-game/static/js/main.9d1b1f76.js.map",
+    "787.69b12325.chunk.js.map": "/memory-game/static/js/787.69b12325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb3512d1.css",
+    "static/js/main.9d1b1f76.js"
+  ]
+}
