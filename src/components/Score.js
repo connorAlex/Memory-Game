@@ -5,9 +5,9 @@ const Score = (props) => {
 
 
     return (
-        <div className='Main'>
-            <div>Score:{score}</div>
-            <div>HighScore:{highscore}</div>
+        <div className='score'>
+            <div>Score:<div>{score}</div></div>
+            <div>HighScore:<div>{highscore}</div></div>
         </div>
     )
     }

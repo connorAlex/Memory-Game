@@ -7,7 +7,7 @@ const Header = () => {
       <div>
         Memory Game
       </div>
-      <div>Select a character you haven't selected before!</div>
+      <div>Select a character only once!</div>
     </div>
   )
 }
