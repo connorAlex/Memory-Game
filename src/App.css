@@ -11,9 +11,10 @@
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  height: 100%;
+  height: 10%;
   gap: 5px;
 }
 .header :first-child {
@@ -24,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   gap: 15px;
 }
 
@@ -31,9 +33,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
-  height: 100%;
+  height: 10%;
 }
 
 .cardHolder {
@@ -42,11 +44,13 @@
   justify-content: center;
   align-items: center;
 
-  height: fit-content;
-  width: fit-content;
+  max-width: 70%;
+  width: auto;
+  height: 60%;
 
-  padding: 1%;
-  margin-inline: 25vh;
+  padding: 2%;
+  
+  
   gap: 25px;
   border: 1px solid black;
 
@@ -71,7 +75,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 200px;
+  width: 150px;
   height: 200px;
 
   background-color: white;
