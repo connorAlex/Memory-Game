@@ -17,7 +17,11 @@
   background-color: #94a3b8;
   color: black;
 
-  height: 10%;
+  margin: 10px;
+  margin-inline: 30%;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 5px;
   gap: 5px;
 }
 .header :first-child {
@@ -36,9 +40,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  height: 10%;
+  justify-content: flex-end;
+  padding: 5px;
+  
 }
 
 .cardHolder {
@@ -47,17 +51,18 @@
   justify-content: center;
   align-items: center;
 
-  max-width: 70%;
-  width: auto;
-  height: 60%;
+  
+  width: 75%;
+  height: 65%;
 
   padding: 2%;
-  
   
   gap: 25px;
   border: 1px solid black;
 
   background-color: #94a3b8;
+  border: 1px solid;
+  border-radius: 8px;;
   color: black;
 }
 .score {
