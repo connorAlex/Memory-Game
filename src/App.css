@@ -14,6 +14,9 @@
   justify-content: center;
   align-items: center;
 
+  background-color: #94a3b8;
+  color: black;
+
   height: 10%;
   gap: 5px;
 }
@@ -93,7 +96,7 @@
   width: 100%;
   text-align: center;
   justify-content: flex-end;
-  padding: 5px;
+  padding-bottom: 5px;
 }
 
 .card:hover {
