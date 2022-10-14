@@ -33,9 +33,9 @@ const Main = () => {
 
     const resetGame = () => {
         setHistory([]);
-        setHighscore(score);
-        setScore(-1);
         setCards(shuffle([...cards]));
+        setScore(-1);
+        
     };
 
     const handleClick = (e) => {
@@ -47,11 +47,17 @@ const Main = () => {
             setCards(shuffledCards);
             setHistory(history.concat([id]));
         } else {
-            if (highscore < score) resetGame();
+            
+            if (highscore < score) {
+                setHighscore(score);
+            };
+            resetGame();
+            
+            console.log(history);
+            console.log(score);
         }
         
-        // console.log(history);
-        // console.log(score);
+        
     };
 
     const checkHistory = (id) => {
