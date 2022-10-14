@@ -13,7 +13,7 @@ const Main = () => {
     
     useEffect(() => {
         setScore(score +1);
-    }, [history])
+    }, [history]);
 
     // this is the Fisher-Yates Shuffle Algorithm.
     const shuffle = (arr) => {
@@ -30,30 +30,36 @@ const Main = () => {
         };
         return arr;
     };
-    
+
+    const resetGame = () => {
+        setHistory([]);
+        setHighscore(score);
+        setScore(-1);
+        setCards(shuffle([...cards]));
+    };
+
     const handleClick = (e) => {
         e.preventDefault();
         const id = e.currentTarget.id;
         const shuffledCards = shuffle([...cards]);
-        
-        
+
         if (checkHistory(id)) {
             setCards(shuffledCards);
             setHistory(history.concat([id]));
         } else {
-            if (highscore < score) setHighscore(highscore + score);
+            if (highscore < score) resetGame();
         }
         
-        console.log(history);
-        console.log(score);
-    }
+        // console.log(history);
+        // console.log(score);
+    };
 
     const checkHistory = (id) => {
         if (history.indexOf(id) !== -1){
             return false;
         }
         return true;
-    } 
+    } ;
     
     return (
         <div className='Main'>
